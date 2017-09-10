@@ -1,5 +1,5 @@
 {
-  "name": "verdaccio-deamon-windows",
+  "name": "@davidenke/verdaccio-deamon-windows",
   "version": "0.0.3",
   "description": "A windows deamon running verdaccio npm registry locally",
   "main": "index.js",
