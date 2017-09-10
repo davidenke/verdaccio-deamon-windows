@@ -1,11 +1,12 @@
 const path = require('path');
+const config = require('./package.json');
 const Service = require('node-windows').Service;
 const EventLogger = require('node-windows').EventLogger;
 
 // Create a new service object
 const instance = new Service({
     name: 'Verdaccio',
-    description: 'The nodejs.org example web server.',
+    description: config.description,
     script: path.join(__dirname, 'start.js')
 });
 
